@@ -5,7 +5,7 @@
 **Review:** A scoping review mapping the role of Husserlian phenomenology in artificial intelligence research  
 **Review authors:** Hendrik Poschmann and Stefania Centrone  
 **Corresponding author:** Hendrik Poschmann  
-**Version:** 1.0 — 6 September 2026  
+**Version:** 1.1 — 2 October 2026 (version 1.0: 6 September 2026)  
 **Registration:** Not registered; no prospective registration number exists.
 
 ### 1. Status and documentary basis
@@ -55,7 +55,22 @@ The formal retrieval uses the Semantic Scholar Academic Graph API. The most rece
 | robotics_phenomenology | "robotics" AND "phenomenology" |
 | robotics_consciousness | "robotics" AND "consciousness" |
 
-A supplementary query used the name variant **"Artificial Intelligence" AND "Edmund Husserl"**, as confirmed by the corresponding author during this consolidation. Eight records in the preserved combined export retain this additional label, alongside primary-query labels. Its separate execution time is not established by the retained files. Query capitalization and combined provenance labels in the raw export are preserved; the table above follows the written API specification.
+A supplementary query used the name variant **"Artificial Intelligence" AND "Edmund Husserl"**. For each row, the preserved combined export, [rohdaten_combined_20251205_141147.csv](rohdaten_combined_20251205_141147.csv), records the query labels and, in the SourceFile field, the first run file that returned the record. The retained scraper names each run file with the time at which the file was written. On this basis, all nine runs were executed on 5 December 2025 within one retrieval session, and the export was consolidated at 14:11:47:
+
+| Run file (time stamp) | Query label in the export | Rows first contributed |
+|---|---|---:|
+| 20251205_103447 | "Artificial Intelligence" AND "Edmund Husserl" | 8 |
+| 20251205_103555 | "Artificial Intelligence" AND "Husserl" | 730 |
+| 20251205_103710 | "Artificial Intelligence" AND "phenomenology" | 340 |
+| 20251205_110042 | "robotics" AND "phenomenology" | 925 |
+| 20251205_110238 | "Artificial Intelligence" AND "consciousness" | 965 |
+| 20251205_134213 | "robotics" AND "consciousness" | 1,805 |
+| 20251205_135133 | "robotics" AND "Husserl" | 8 |
+| 20251205_140050 | "robotics" AND "epistemology" | 212 |
+| 20251205_140759 | "artificial intelligence" AND "epistemology" | 601 |
+| Total | | 5,594 |
+
+"Rows first contributed" counts rows whose SourceFile is that run. Consolidation merges duplicates and joins their query labels, so this is not the number of records each query returned. All eight rows carrying the name-variant label also carry the primary label "Artificial Intelligence" AND "Husserl". The supplementary query therefore contributed no unique record: without it, the combined export and every subsequent flow count would be unchanged. Version 1.0 stated that its execution time could not be established; the run-file time stamps in the now deposited raw export establish it. Query capitalization and combined provenance labels in the raw export are preserved; the table of primary queries above follows the written API specification.
 
 The narrower Husserl queries retrieve explicitly anchored material, while the broader philosophical queries allow an anchor to be identified at abstract or full-text stage. The specification and retained script record:
 
@@ -120,7 +135,7 @@ For multi-valued fields, a publication contributes to each assigned category; ca
 
 The PhilPapers check was introduced after peer review and was not part of the original formal retrieval. It followed the eight primary conceptual combinations as closely as the interface permitted and recovered nine apparently eligible publications. It was a post hoc check, not a parallel systematic search; a complete query-to-record execution log is not retained.
 
-During the second revision, these nine publications were charted from their full texts using the existing instrument. The corresponding author manually checked and confirmed the decisions against the codebook. No independent second coding is claimed. The records remain outside the formal 32-publication corpus and its PRISMA flow. They have their own influence-mode distribution and illustrative coding alternatives, with no pooled prevalence estimate. The accompanying [external-check report](external_PhilPapers_review/external_check_round2.md) and [workbook](external_PhilPapers_review/external_check_round2.xlsx) document the analysis.
+During the second revision, the corresponding author charted these nine publications from their full texts using the existing instrument and made all coding assignments. An AI tool was used only to set up the charting workbook from the existing codebook fields, to transcribe the published abstracts, and to propose page locators; the corresponding author verified these against the full texts. No independent second coding is claimed. The records remain outside the formal 32-publication corpus and its PRISMA flow. They have their own influence-mode distribution and illustrative coding alternatives, with no pooled prevalence estimate. The accompanying [external-check report](external_PhilPapers_review/external_check_round2.md) and [workbook](external_PhilPapers_review/external_check_round2.xlsx) document the analysis.
 
 The confirmed external chart has 10 influence assignments across 9 publications; the formal chart has 33 across 32. Methodological import or design guidance occurs in 3/9 and 7/32 distinct publications, respectively. These are completed-review results, not protocol eligibility targets. The external result qualifies quantitative interpretation of the formal sample and does not establish its stability across information sources.
 
@@ -141,6 +156,6 @@ The following figures identify the completed workflow documented by this protoco
 | Formal included corpus | 32 |
 | Separately charted external publications | 9 |
 
-The API/flow workbook, the three screening workbooks, and final_results.xlsx provide the primary procedural and decision record. The local combined CSV, rohdaten_combined_20251205_141147.csv, supplies the preserved query labels and input count; that raw export was consulted locally and is not linked here as a public repository file. The retained scripts document retrieval and CSV consolidation. The repository materials were checked against snapshot [bb560f7](https://github.com/HPoschmann/husserl_ai_scoping_review/tree/bb560f721832bd7a99c6c4b37d9f678191f4b179) during preparation of this document. File modification metadata are not treated as proof that a particular rule was fixed on a particular day.
+The API/flow workbook, the three screening workbooks, and final_results.xlsx provide the primary procedural and decision record. The combined CSV, [rohdaten_combined_20251205_141147.csv](rohdaten_combined_20251205_141147.csv), supplies the preserved query labels, run-file provenance, and input count; it was deposited in the repository during the third revision. [verify_external_title_check.py](verify_external_title_check.py) reproduces the normalized-title check of the nine external publications against this export and the title-screening workbook. The retained scripts document retrieval and CSV consolidation. The repository materials were checked against snapshot [bb560f7](https://github.com/HPoschmann/husserl_ai_scoping_review/tree/bb560f721832bd7a99c6c4b37d9f678191f4b179) during preparation of this document. File modification metadata are not treated as proof that a particular rule was fixed on a particular day.
 
-**Version history:** Version 1.0 was consolidated on 6 September 2026 for the second revision. It documents the original procedure, the separately identified external-check addition, and the supplementary name-variant query confirmed by the corresponding author. It does not rerun screening, change inclusion decisions, or register the review retrospectively. Earlier external-check materials describing the absence of a standalone protocol refer to the repository before this consolidation was added.
+**Version history:** Version 1.0 was consolidated on 6 September 2026 for the second revision. It documents the original procedure, the separately identified external-check addition, and the supplementary name-variant query confirmed by the corresponding author. It does not rerun screening, change inclusion decisions, or register the review retrospectively. Earlier external-check materials describing the absence of a standalone protocol refer to the repository before this consolidation was added. Version 1.1 (2 October 2026, third revision) adds the run-file evidence for the supplementary name-variant query and its complete overlap with the primary query. It records that the raw export is now deposited, together with a script that reproduces the normalized-title check. It also clarifies that the corresponding author performed the external charting, while an AI tool set up the workbook, transcribed abstracts, and proposed page locators. No search, screening, inclusion, or coding decision was changed.

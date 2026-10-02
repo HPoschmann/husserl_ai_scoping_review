@@ -2,7 +2,7 @@
 
 A scoping review mapping the role of Husserlian phenomenology in artificial intelligence research
 
-Hendrik Poschmann and Stefania Centrone | 6 September 2026
+Hendrik Poschmann and Stefania Centrone | 6 September 2026; documentation update 2 October 2026
 
 ## Scope and procedure
 
@@ -10,7 +10,7 @@ This report charts the nine records identified in the first-revision PhilPapers 
 
 All nine full texts were accessed as local publisher PDFs, including the complete 12-page Poljanšek chapter. Evidence is located by printed page and, where needed, PDF page number. The accompanying external_check_round2.xlsx workbook preserves every original codebook field relevant to external charting and includes additional provenance and reasoning columns. Eight published abstracts are transcribed from the source PDFs. Lopes’s proto-computationalism article has no published abstract in its PDF or publisher article page; this is recorded as an absence, without substituting a new summary.
 
-The charting used the original Codebook and ValidationLists sheets in final_results.xlsx and the definitions in manuscript Sections 2.5 and 3.5. The corresponding author manually checked and confirmed the charting decisions against the codebook (human-in-the-loop). The codebook was not retuned to obtain agreement with the original result. The original workbook is retained as the basis of comparison, including its multi-valued Cibotaru entry. No independent second coding or inter-rater statistic was obtained.
+The charting used the original Codebook and ValidationLists sheets in final_results.xlsx and the definitions in manuscript Sections 2.5 and 3.5. The corresponding author performed the charting and made all coding assignments, from initial assignment to final decision. An AI tool was used only to set up the charting workbook from the existing codebook fields, to transcribe the published abstracts from the source PDFs, and to propose page locators; the corresponding author verified the transcriptions and locators against the full texts. No AI tool assigned codes. The codebook was not retuned to obtain agreement with the original result. The original workbook is retained as the basis of comparison, including its multi-valued Cibotaru entry. No independent second coding or inter-rater statistic was obtained.
 
 ## Applying the existing instrument
 
@@ -43,7 +43,7 @@ The two sets overlap thematically, but thematic overlap cannot establish stabili
 | PP01 / [54] | Floriana Ferro (2022)<br>Meeting the Gaze of the Robot: A Phenomenological Analysis on Human–Robot Empathy | conceptual_translation |
 | PP02 / [55] | Ingar Brinck; Christian Balkenius (2020)<br>Mutual Recognition in Human–Robot Interaction: A Deflationary Account | design_guidance |
 | PP03 / [56] | Tom Poljanšek (2025)<br>Situation Cognition for Social Robotics | agenda_setting |
-| PP04 / [57] | Patrick Grüneberg (2024)<br>Intentionality and performance: the phenomenology of gait initiation | methodological_import |
+| PP04 / [57] | Patrick Grüneberg (2026)<br>Intentionality and performance: the phenomenology of gait initiation | methodological_import |
 | PP05 / [58] | Jesse Lopes (2023)<br>Can Deep CNNs Avoid Infinite Regress/Circularity in Content Constitution? | critique/limits; design_guidance |
 | PP06 / [59] | Jesse D. Lopes (2023)<br>Phenomenology as Proto-Computationalism: Do the Prolegomena Indicate a Computational Reading of the Logical Investigations? | conceptual_translation |
 | PP07 / [60] | Dmytro Mykhailov; Nicola Liberati (2023)<br>A Study of Technological Intentionality in C++ and Generative Adversarial Model: Phenomenological and Postphenomenological Perspectives | conceptual_translation |
@@ -68,7 +68,7 @@ Assigned mode(s): design_guidance. Design guidance is primary because the paper 
 
 Evidence: pp. 62–67, Sections 3–6; especially p. 65 (components) and pp. 66–67 (Husserl); PDF pp. 10–15. Identification, confirmation, and regulated turn-taking are specified as components of mutual recognition; the paper does not report a newly implemented complete recognition system.
 
-Qualification: Conceptual translation is present but subordinate to the explicit design-facing contribution; no additional mode counted.
+Qualification: Conceptual translation is present but subordinate to the explicit design-facing contribution; no additional mode counted. A conceptual-translation reading is also plausible because the Husserlian discussion (pp. 66–67) follows the specification of recognition components (p. 65); it is reported as a separate coding scenario.
 
 ### PP03 — Tom Poljanšek (2025) [56]
 
@@ -80,13 +80,13 @@ Evidence: pp. 498–500 (Section 4 and beginning of Section 5); pp. 502–503 (S
 
 Qualification: Design guidance is a plausible broader reading. It is not counted here because the transfer remains underspecified.
 
-### PP04 — Patrick Grüneberg (2024) [57]
+### PP04 — Patrick Grüneberg (2026) [57]
 
-Intentionality and performance: the phenomenology of gait initiation. Phenomenology and the Cognitive Sciences, advance-online PDF, 23 pages. https://doi.org/10.1007/s11097-023-09953-8
+Intentionality and performance: the phenomenology of gait initiation. Phenomenology and the Cognitive Sciences 25, 779–801 (online first 10 January 2024). https://doi.org/10.1007/s11097-023-09953-8
 
 Assigned mode(s): methodological_import. Methodological import: distinct phenomenological categories are linked to an explicit report-and-score procedure in an actual robotic rehabilitation setting. This is stronger than citing a robot as an illustrative example.
 
-Evidence: PDF pp. 2–7 (Introduction and Section 2), pp. 13–21 (Sections 4–5). Husserlian analysis is connected to previously reported HAL rehabilitation findings: 20 participants, a 26-item questionnaire, and comparison with FIM-M scores. The present article reanalyses prior findings rather than reporting a new trial or a robot designed from Husserl.
+Evidence: advance-online PDF pp. 2–7 (Introduction and Section 2), pp. 13–21 (Sections 4–5). Husserlian analysis is connected to previously reported HAL rehabilitation findings: 20 participants, a 26-item questionnaire, and comparison with FIM-M scores. The present article reanalyses prior findings rather than reporting a new trial or a robot designed from Husserl.
 
 Qualification: The empirical findings predate this article. The code does not attribute a new experiment or autonomous subjectivity to HAL.
 
@@ -146,17 +146,23 @@ Qualification: The author's ontological position is recorded, not adopted as an 
 | --- | --- | --- |
 | Main chart | PP05 has both critique and design; PP06 is conceptual translation | 3/9 (33.3%) |
 | Single-primary reading of PP05 | Remove only PP05 design_guidance | 2/9 (22.2%) |
+| Conceptual reading of PP02 | Retain main chart and recode PP02 from design_guidance to conceptual_translation | 2/9 (22.2%) |
 | Broader procedural reading of PP06 | Retain main chart and recode PP06 from conceptual_translation to methodological_import | 4/9 (44.4%) |
 | Broader design reading of PP03 | Retain main chart and recode PP03 from agenda_setting to design_guidance | 4/9 (44.4%) |
 
-These are one-change scenarios, not an exhaustive range, confidence interval, or additional findings. They show how contested boundaries can matter in a nine-record set. In particular, a conclusion about the rarity of implemented systems cannot be recovered simply by choosing a stricter primary influence code.
+These are one-change scenarios, not an exhaustive range, confidence interval, or additional findings. They show how contested boundaries can matter in a nine-record set. In particular, a conclusion about the rarity of implemented systems cannot be recovered simply by choosing a stricter primary influence code. Two scenarios lower and two raise the methodological/design count relative to the main chart; the confirmed main assignments are unchanged. The PP02 scenario was added in the third revision because the Husserlian discussion in that paper (pp. 66–67) follows the specification of recognition components (p. 65).
 
 ## Provenance and reproducibility
 
-The source inventory, published abstracts, and full-text notes are supplied in external_check_round2.xlsx, with a tabular export in external_check_round2.csv. The original corpus comparison was recomputed from final_results.xlsx, Records sheet, by splitting semicolon-separated mode values. The nine publication titles were checked against rohdaten_combined_20251205_141147.csv and step1_title_screening_combined.xlsx using case- and punctuation-insensitive comparison; no matches were found. This does not establish absence from the Semantic Scholar database itself.
+The source inventory, published abstracts, and full-text notes are supplied in external_check_round2.xlsx, with a tabular export in external_check_round2.csv. The original corpus comparison was recomputed from final_results.xlsx, Records sheet, by splitting semicolon-separated mode values. The nine publication titles were checked against rohdaten_combined_20251205_141147.csv and step1_title_screening_combined.xlsx using case- and punctuation-insensitive comparison; no matches were found. This does not establish absence from the Semantic Scholar database itself. Both files are deposited in the repository root, and [verify_external_title_check.py](../verify_external_title_check.py) reproduces this check, including a positive control.
 
-The public repository was inspected on 6 September 2026. It contains the workbooks, API specification, and retrieval scripts, but no standalone protocol file. No retrospective protocol is presented as prospective documentation. The full source texts are not part of the submission attachments.
+Note on the protocol: when this report was first prepared on 6 September 2026, the public repository contained the workbooks, API specification, and retrieval scripts, but no standalone protocol file. The retrospectively consolidated [review_protocol.md](../review_protocol.md) has since been added (now version 1.1). It is not prospective documentation. The full source texts are not part of the submission attachments.
 
 Repository: https://github.com/HPoschmann/husserl_ai_scoping_review
 
 Companion files: [charting workbook](external_check_round2.xlsx) and [CSV export](external_check_round2.csv).
+
+## Document history
+
+- 6 September 2026: first version, prepared for the second revision.
+- 2 October 2026: documentation update for the third revision. It clarifies who performed the charting and how an AI tool was used, adds the PP02 coding scenario, gives the final pagination of PP04, and adds the provenance notes on the protocol and the deposited raw export. No coding assignment, count, or proportion was changed.
